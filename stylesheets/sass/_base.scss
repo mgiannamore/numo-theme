@@ -1,0 +1,83 @@
+/* Imports */
+@import 'variables';
+@import 'mixins';
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-transform: lowercase;
+}
+body {
+    margin: 0;
+    font: 16px/1 $font__family--main;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+main,
+li {
+    display: block;
+}
+h1,
+h2,
+h3 {
+    font-size: inherit;
+}
+strong {
+    font-weight: bold;
+}
+a,
+button {
+    color: inherit;
+    @include transition(all, .2s, ease-out);
+}
+a {
+    text-decoration: none;
+    display:inline-block;
+}
+button {
+    overflow: visible;
+    border: 0;
+    font: inherit;
+    -webkit-font-smoothing: inherit;
+    letter-spacing: inherit;
+    background: none;
+    cursor: pointer;
+}
+::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+/*:focus {
+    outline: 0;
+}*/
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+hr {
+  border:none;
+  margin:0;
+}
+input[type=submit]{
+  cursor:pointer;
+  @include transition(all, .2s, ease-out);
+}
+.srt {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

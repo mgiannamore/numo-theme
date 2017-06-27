@@ -1,0 +1,43 @@
+@import 'variables';
+@import 'mixins';
+
+.content--careers {
+  p {
+    padding-right:30%;
+
+    a {
+      color:$color--limed-spruce;
+      font-weight:$font__weight--bold;
+      display:inline-block;
+      margin-top:20px;
+      border-bottom:3px solid transparent;
+
+      &:hover {
+        border-color:$color--limed-spruce;
+      }
+    }
+  }
+}
+
+.content--single-career {
+  p {
+    color: $color--darker-gray;
+    margin-bottom:0;
+  }
+  ul {
+    list-style:none;
+
+    li {
+      margin-bottom:20px;
+      @include font-size(15px);
+      color:$color--dark-gray;
+      line-height: calculateRem(25px);
+    }
+  }
+  hr {
+    border-top:1px solid $color--lighter-gray;
+    margin-top:60px;
+    padding-top:60px;
+  }
+
+}

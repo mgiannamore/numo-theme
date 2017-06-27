@@ -1,0 +1,217 @@
+@import 'variables';
+@import 'mixins';
+
+.btn {
+  @include font-size(16px);
+  padding: em(13) em(30);
+  border:2px solid;
+  border-radius:50px;
+}
+
+.top-logo {
+  width:130px;
+  height:27px;
+  position:absolute;
+  right:65px;
+  top:60px;
+
+  @media(max-width:1029px){
+    right:40px;
+    top:48px;
+  }
+}
+
+.logo-link {
+  width:100%;
+  height:100%;
+  position:relative;
+  display:block;
+}
+
+.main-nav {
+  position:absolute;
+  top:60px;
+  left:65px;
+  color:$color--white;
+  text-align:left;
+  z-index:10000;
+  a {
+    display:block;
+    margin-bottom:30px;
+
+    &.active {
+      @include font-size(30px);
+      font-weight:$font__weight--black;
+    }
+
+    &:hover {
+      color:darken($color--white, 20%);
+    }
+  }
+
+  @media(max-width:1029px){
+    display:none;
+  }
+}
+
+.nav-container {
+  width:520px;
+  height:620px;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  background-repeat:no-repeat;
+  background-position:top-left;
+  background-size:contain;
+  -webkit-background-size:contain;
+  @include transition(all, .2s, ease-out);
+
+  @media(max-height:800px),  (max-width:1229px){
+    width:335px;
+    height:400px;
+  }
+
+  @media(max-width:1029px){
+    width:160px;
+    height:265px;
+  }
+}
+
+.back {
+  width:101px;
+  height:101px;
+  position:absolute;
+  left:283px;
+  top:243px;
+  border-radius:50%;
+  background:url(../../img/numo/back-arrow.png) no-repeat center center $color--lighter-gray;
+  display:block;
+
+  &:hover {
+    background-color:darken($color--lighter-gray, 10%);
+  }
+
+  @media(max-height:800px), (max-width:1229px){
+    width: 80px;
+    height: 80px;
+    left: 163px;
+    top: 133px;
+  }
+
+  @media(max-width:1029px){
+    width:62px;
+    height:62px;
+  }
+}
+
+.nav-toggle {
+  width:35px;
+  height:27px;
+  display:block;
+  background:url(../../img/numo/hamburger.png) no-repeat center center;
+  background-image: -webkit-image-set(url(../../img/numo/hamburger.png) 1x,
+         url(../../img/numo/hamburger@2x.png) 2x);
+  background-image: -moz-image-set(url(../../img/numo/hamburger.png) 1x,
+         url(../../img/numo/hamburger@2x.png) 2x);
+  background-image: -o-image-set(url(../../img/numo/hamburger.png) 1x,
+         url(../../img/numo/hamburger@2x.png) 2x);
+  background-image: -ms-image-set(url(../../img/numo/hamburger.png) 1x,
+         url(../../img/numo/hamburger@2x.png) 2x);
+  left:40px;
+  top:48px;
+  position:relative;
+
+  @media(min-width:1030px){
+    display:none;
+  }
+}
+
+.inner-page__title {
+  @include font-size(30px);
+  color:$color--gray;
+  padding-bottom: calculateRem(60px);
+  margin-bottom:calculateRem(60px);
+  margin-top:calculateRem(200px);
+  border-bottom:1px solid $color--lighter-gray;
+  display:block;
+}
+
+
+.sign-up {
+  position:absolute;
+  width:100%;
+  height:142px;
+  z-index:100000;
+  background:$color--footer-gray;
+  padding-top:50px;
+}
+
+.footer-wrap {
+  margin:0 auto;
+  width:50%;
+  position:relative;
+}
+
+.footer-left {
+  position:absolute;
+  left:0;
+  width:420px;
+}
+.footer-right {
+  position:absolute;
+  right:0;
+}
+.footer-left__top {
+  @include font-size(22px);
+  font-weight:$font__weight--bold;
+  margin-bottom:10px;
+}
+
+.content-gradient {
+  position:fixed;
+  width:100vw;
+  height:148px;
+  z-index:900;
+  left:0;
+  background: url(../../img/numo/content-gradient.png) repeat-x top left;
+
+  &--top {
+    top:0;
+    transform:rotate(180deg);
+  }
+
+  &--bottom {
+    bottom:0;
+  }
+}
+
+.content {
+  width:37.5%;
+  position:relative;
+
+  h2 {
+    @include font-size(20px);
+    color:$color--tango;
+    font-weight:$font__weight--black;
+    margin-bottom:20px;
+  }
+
+  p {
+    @include font-size(15px);
+    color:$color--dark-gray;
+    margin-bottom: em(70);
+    line-height:calculateRem(25px);
+  }
+
+  @media(max-width:1229px){
+    width:42.5%;
+  }
+
+}
+
+.plain-link {
+  &:hover {
+    color:$color--darker-gray;
+  }
+}

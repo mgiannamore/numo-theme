@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'mixins';
+
+.content--newsletter {
+  h2 {
+    @include font-size(20px);
+    color:$color--darker-gray;
+    line-height:calculateRem(25px);
+    padding-right:25%;
+  }
+}
+.newsletter-form {
+  input[type="email"]{
+    width:70%;
+    height:50px;
+    border: 1px solid $color--gray;
+    border-radius:4px;
+    display:block;
+    margin-bottom:30px;
+    padding-left:20px;
+    font-size:calculateRem(16px);
+  }
+  input[type="submit"]{
+    min-width:180px;
+    @include font-size(15px);
+  }
+}

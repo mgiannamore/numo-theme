@@ -1,0 +1,85 @@
+@import 'variables';
+@import 'mixins';
+
+.home__pad{
+  /*padding-top:calculateRem(395px);*/
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+  height:calculateRem(231px);
+}
+
+.home__headline__container {
+  position:relative;
+  display:inline-block;
+  margin-bottom:calculateRem(50px);
+}
+
+.home__headline {
+  @include font-size(100px);
+  color: $color--white;
+  font-weight:$font__weight--medium;
+  margin-top:calculateRem(-50px);
+  position:relative;
+  display:inline-block;
+}
+
+.home__dot__container {
+  position:absolute;
+  background: $color--limed-spruce;
+  content:"";
+  height:132px;
+  bottom:-2px;
+  left:100%;
+}
+
+.home__dot {
+  width: 10px;
+  height: 10px;
+  content: "";
+  position:absolute;
+  left:0;
+  bottom:18px;
+  background:$color--tango;
+  border-radius:50%;
+}
+
+.home__copy {
+  color:$color--white;
+  font-weight:$font__weight--regular;
+  max-width: em(672);
+  margin-bottom:calculateRem(50px);
+  line-height:em(34);
+  /*margin-top:em(-17);*/
+}
+
+.home__copy__container{
+  margin-top:em(-34);
+  overflow:hidden;
+  padding-top:em(17);
+  position:relative;
+  height:164px;
+}
+.slide-mover {
+  position:relative;
+  top:0;
+}
+.home__copyslide {
+  position:relative;
+  opacity:0;
+}
+.home__down-arrow {
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  bottom:em(60);
+  display:block;
+  width:48px;
+  height:48px;
+  background:url(../../img/numo/down-arrow.png) no-repeat center center;
+}

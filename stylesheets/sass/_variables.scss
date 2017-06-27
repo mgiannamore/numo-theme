@@ -1,0 +1,53 @@
+/*==========================================================================
+
+
+    ██╗   ██╗ █████╗ ██████╗ ██╗ █████╗ ██████╗ ██╗     ███████╗███████╗
+    ██║   ██║██╔══██╗██╔══██╗██║██╔══██╗██╔══██╗██║     ██╔════╝██╔════╝
+    ██║   ██║███████║██████╔╝██║███████║██████╔╝██║     █████╗  ███████╗
+    ╚██╗ ██╔╝██╔══██║██╔══██╗██║██╔══██║██╔══██╗██║     ██╔══╝  ╚════██║
+     ╚████╔╝ ██║  ██║██║  ██║██║██║  ██║██████╔╝███████╗███████╗███████║
+      ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝╚══════╝
+
+  _________________________________________________________________________
+
+  Contains varialbes to be referenced by
+  other partials in the project.
+
+  Contents:
+    1. Font
+    2. Color
+    3. Grid System
+    4. Image Path
+
+  ========================================================================*/
+
+
+
+    /* ==[ 1. Font ]== */
+        /* Font Families */
+            $font__family--main:        "Nunito Sans", sans-serif;
+            $browser-context:           16; //default font size is 16px, will be used to calculate ems
+
+
+        /* Font Weights */
+            $font__weight--extra-light: 200;
+            $font__weight--light:       300;
+            $font__weight--regular:     400;
+            $font__weight--medium:      600;
+            $font__weight--bold:        700;
+            $font__weight--black:       900;
+
+
+    /* ==[ 2. Colors ]== */
+            $color--limed-spruce:       #37474F;
+            $color--smalt-blue:         #50748A;
+            $color--tango:              #EF7622;
+            $color--gallery:            #EEEEEE;
+            $color--tall-poppy:         #BE3A26;
+            $color--tundora:            #434343;
+            $color--white:              #FFFFFF;
+            $color--gray:               #bcbec0;
+            $color--lighter-gray:       #eeedee;
+            $color--dark-gray:          #898a8a;
+            $color--footer-gray:        #f5f5f5;
+            $color--darker-gray:        #3e3e3f;

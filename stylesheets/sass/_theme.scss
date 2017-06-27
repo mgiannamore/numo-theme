@@ -1,0 +1,57 @@
+.page--dark {
+  background: $color--limed-spruce;
+}
+.page--light {
+  background:$color--white;
+}
+.btn--orange {
+  color:$color--white;
+  border-color:$color--tango;
+  background:$color--tango;
+  font-weight: $font__weight--medium;
+}
+.btn--orange:hover {
+  border-color:$color--limed-spruce;
+  background:$color--limed-spruce;
+}
+.btn--white {
+  color:$color--white;
+  border-color:$color--white;
+}
+.btn--white:hover {
+  color:darken($color--white, 30%);
+  border-color:darken($color--white, 30%);
+}
+.top-logo--trans {
+  background-image:url(../../img/numo/home-logo.png);
+  opacity:0;
+}
+.top-logo--color {
+  background-image: url(../../img/numo/color-logo.png);
+}
+.main-nav--home {
+  color:darken($color--white, 40%);
+
+  a {
+    &:hover {
+      color:$color--white;
+    }
+  }
+}
+.nav-container--faq {
+  background-image:url(../../img/numo/faq-bg.png);
+
+  @media(max-width:1029px){
+    background-image:url(../../img/numo/faq-bg-t.png);
+  }
+  
+}
+.nav-container--careers {
+  background-image:url(../../img/numo/careers-bg.png);
+}
+.nav-container--newsletter {
+  background-image:url(../../img/numo/newsletter-bg.png);
+}
+.nav-container--contact {
+  background-image:url(../../img/numo/contact-bg.png);
+}

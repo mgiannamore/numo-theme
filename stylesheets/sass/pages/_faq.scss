@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'mixins';
+
+.top-logo--faq {
+  position:fixed;
+  z-index:10000;
+}
+.faq__pad {
+  padding-left:45%;
+  width:100%;
+  position:relative;
+
+  @media(max-width:1229px){
+    padding-left:35%;
+  }
+}
